@@ -1,0 +1,25 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+body:before {
+    content: '';
+    display: block;
+    position: absolute;
+    inset: 0;
+    background: url('bg.jpeg') no-repeat center fixed;
+    background-size: cover;
+    animation: animate 30s infinite;
+}
+
+@keyframes animate {
+    from {scale: 1}
+    to {scale: 2}
+}
+
+canvas {
+    position: relative;
+    z-index: 99;
+}
